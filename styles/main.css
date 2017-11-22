@@ -24,14 +24,33 @@ body {
 /* END NAV */
 
 /* START SECTION ABOUT */
-#imgcirc {
-  box-shadow: 0 0 40px 0 #18191c;
-  border-radius: 50%;
-  display: block;
-  height: 250px;
+.hexa img {
+  position: relative;
+  top: -25px;
+}
+.hexa, .hexa div {
   margin: 0 auto;
-  margin-top: 50px;
-  width: 250px;
+  transform-origin: 50% 50%;
+  overflow: hidden;
+  width: 300px;
+  height: 300px;
+}
+.hexa {
+  width: 325px;
+  height: 230px;
+}
+.hexa div {
+  width: 100%;
+  height: 100%;
+}
+.hexa {
+  transform: rotate(120deg);
+}
+.hex1 {
+  transform: rotate(-60deg);
+}
+.hex2 {
+  transform: rotate(-60deg);
 }
 h3 {
   color: #f7f7f7!important;
@@ -118,15 +137,20 @@ h5 {
 /* START HLINK */
 #about {
   height: inherit;
+  margin-top: 50px;
   margin-bottom: 200px;
 }
 #resume {
+  margin-bottom: 200px;
+}
+#work {
   margin-bottom: 200px;
 }
 #contact {
   margin-bottom: 200px;
 }
 /* END HLINK */
+
 
 /* START CFORM */
 form {
